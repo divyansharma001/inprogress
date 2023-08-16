@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+ 
+    <style>
+        
+        
+        .css-selector {
+    background: linear-gradient(271deg, #322653, #8062d6);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.text{
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+  
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  margin: 0;
+  background: grey;
+}
+
+
+
+
+
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 1em auto;
+  overflow: hidden;
+  
+  background: transparent;
+}
+
+
+.thumbnail {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 300px;
+  z-index: 1;
+  
+  background: #293853;
+  background-position: 50% 50%;
+  background-size: cover;
+  
+  transition: right 250ms , left 250ms ;
+}
+
+.thumbnail--awesome {
+  background-image: url(Untitled\ design\ \(2\).png);
+}
+
+.thumbnail__overlay {
+  position: relative;
+  padding-top: 2 - 0.5em;
+  height: 100%;
+  
+  background: rgba(0,0,0,0.4);
+  
+  text-align: center;
+  
+  opacity: 0;
+  
+  transition: opacity 250ms ;
+
+}
+
+.background {
+  background-image: url(movewithjoy.png);
+}
+
+.background3{
+  background-image: url(paintingart.png);
+}
+
+.desc {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 2;
+  
+  background: white;
+  
+  text-align: center;
+  
+  transition: background 250ms , color 250ms, width 250ms , padding 250ms;
+  
+  &:after {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #fff transparent transparent;
+    content: "";
+    transition: border-color 250ms;
+  }
+}
+
+.showcase:hover {
+  
+  .thumbnail {
+    right: 325px;
+    left: -25px;
+  }
+  .thumbnail__overlay {
+    opacity: 1;
+  }
+  .desc {
+    width: 350px;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+    background: #202426;
+    
+    color: #fff;
+    
+    &:after {
+      border-color: transparent #202426 transparent transparent;
+    }
+  }
+}
+
+
+ 
+.showcase--inverted .thumbnail {
+  right: 0;
+  left: 300px;
+}
+
+.showcase--inverted .desc {
+  left: 0;
+  right: auto;
+  
+  &:after {
+    left: auto;
+    right: -20px;
+    border-color: transparent transparent transparent #fff;
+  }
+}
+
+.showcase--inverted:hover {
+  
+  .thumbnail {
+    left: 325px;
+    right: -25px;
+  }
+
+  .desc {
+    
+    &:after {
+      border-color: transparent transparent transparent #202426;
+    }
+  }
+}
+
+
+.btn {
+  padding: 1em 2em;
+  
+  border: 0.15em solid #fff;
+  
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  
+  transition: background 250ms;
+  
+  &:hover {
+    background: rgba(0,0,0,0.6);
+  }
+}
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <section class="py-5 text-center css-selector">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light text">Crafting Engaging and Impactful Websites</h1>
+            <p class="lead text-body-secondary text"><span style="color:#FCBAAD;">Behold, a glimpse of my current <span style="color: #E19898; font-weight: bold;" >web development wonders</span>. But hold onto your screens, for an enchanting procession of even more imaginative and real-life projects is <span style="color: #E19898; font-weight: bold;">poised to unfold</span>. The canvas of creativity knows no bounds, and you're invited to witness its evolution firsthand.</span> </p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="showcase">
+        <div class="thumbnail thumbnail--awesome">
+            <div class="thumbnail__overlay">
+                <a class="btn btn-outline-dark btn-light btn-lg text" href="https://divyansharma001.github.io/my-project-01/" style=" font-family: 'DM Sans', sans-serif;">Take a Look</a>
+            </div>
+        </div>
+        <div class="desc">
+            <p class="text" style="color: #00ADB5">Buisness Website</p>
+            <h2 class="text"  style="color: #FF2E63">TinDog</h2>
+            <p class="text"  style="color: #EA1179;">This is a website for TinDog company, which is basically Tinder for Dogs.
+            </p>
+        </div>
+    </div>
+    <div class="showcase">
+        <div class="thumbnail background">
+            <div class="thumbnail__overlay">
+                <a class="btn btn-outline-dark btn-light btn-lg text" href="https://divyansharma001.github.io/my-project-02/" style=" font-family: 'DM Sans', sans-serif;">Take a Look</a>
+            </div>
+        </div>
+        <div class="desc">
+            <p class="text" style="color: #00ADB5">StartUp Website</p>
+            <h2 class="text" style="color: #3282B8;">Move It</h2>
+            <p class="text" style="color: #6a589a;" >This is my project website for Move It company, which helps you to <span style="font-weight: bold;">relocate easily</span>.
+            </p>
+        </div>
+    </div>
+    <div class="showcase showcase--inverted">
+        <div class="desc">
+            <p class="text" style="color: #00ADB5">Creative Art</p>
+            <h2 style=" font-family: 'DM Sans', sans-serif;">Mondrian Painting</h2>
+            <p style=" font-family: 'DM Sans', sans-serif;">Composition with Red, Blue and Yellow is a 1930 painting[1] by Piet Mondrian, a Dutch artist who was a leading figure in the Neo-Plasticism movement. It consists of thick, black brushwork, defining the borders of colored rectangles. 
+            </p>
+        </div>
+        <div class="thumbnail background3">
+            <div class="thumbnail__overlay">
+                <a class="btn btn-outline-dark btn-light btn-lg text" href="https://divyansharma001.github.io/art/" style=" font-family: 'DM Sans', sans-serif;">Take a Look</a>
+            </div>
+        </div>
+    </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
